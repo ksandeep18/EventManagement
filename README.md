@@ -12,7 +12,6 @@ A comprehensive Event Management System built with Flask that allows users to re
 5. [Screenshots](#screenshots)
 6. [Future Enhancements](#future-enhancements)
 7. [Contributing](#contributing)
-8. [License](#license)
 
 ---
 

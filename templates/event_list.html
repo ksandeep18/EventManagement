@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/others.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>Events List</h1>
+
+<!-- Search Form -->
+<form action="{{ url_for('event_list') }}" method="GET" class="search-form">
+    <input type="text" 
+           name="search_term" 
+           placeholder="Search events..."
+           value="{{ search_term }}">
+    <button type="submit">Search</button>
+</form>
+
+<!-- Events List -->
+{% if events %}
+    <ul class="event-list">
+    {% for event in events %}
+        <li>
+            <a href="{{ url_for('event_detail', id=event['id']) }}">
+                {{ event['title'] }} - {{ event['start_date'] }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p class="no-results">No events found matching your search.</p>
+{% endif %}
+{% endblock %}

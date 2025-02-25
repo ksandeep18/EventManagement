@@ -1,0 +1,53 @@
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 8px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #333; /* Dark background for icons */
+    color: white; /* White icon color */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    background-color: #29aafe; /* Light blue on hover */
+}
+
+/* Hamburger Menu (Responsive Design) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* White bars for hamburger menu */
+    margin: 4px;
+}
+
+/* Responsive Navigation Menu (Mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px; /* Add spacing between items */
+        padding-bottom: 15px;
+        width: 100%;        
+    }
+}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/others.css') }}">
+{% endblock %}
+
+{% block title %}My Profile - Event Management System{% endblock %}
+{% block content %}
+<h1>My Profile</h1>
+
+<p><strong>Username:</strong> {{ user['username'] }}</p>
+<p><strong>Email:</strong> {{ user['email'] }}</p>
+<p><strong>Name:</strong> {{ user['name'] }}</p>
+<p><strong>Surname:</strong> {{ user['surname'] }}</p>
+<p><strong>Membership Type:</strong> {{ user['membership_type'] }}</p>
+
+<h2>My Registered Events</h2>
+
+{% if registered_events %}
+    <ul class="event-list">
+        {% for event in registered_events %}
+            <li>
+                <strong>{{ event['title'] }}</strong><br>
+                <span>Date: {{ event['start_date'] }}</span><br>
+                <a href="{{ url_for('event_detail', id=event['id']) }}">View Details</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You haven't registered for any events yet.</p>
+{% endif %}
+
+<a href="{{ url_for('event_list') }}">Browse All Events</a>
+{% endblock %}

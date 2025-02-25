@@ -1,0 +1,122 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    flex: 1 0 auto;
+}
+
+/* Header Styling */
+.site-header {
+    background: linear-gradient(90deg, #333, #3e8e41); /* Gradient background for header */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 16px;
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect for Navigation Links */
+.nav-links a:hover {
+    background-color: #ff9800; /* Orange background on hover */
+    color: white; /* Keep text white on hover */
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* Active Link Styling */
+.nav-links a.active {
+    background-color: #ff5722; /* Highlight active link with orange-red color */
+}
+
+/* Footer Styling */
+.site-footer {
+     /* Dark footer background */
+    background: linear-gradient(90deg, #333, #3e8e41); /* Gradient background for header */
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ddd; /* Light gray text color */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #ff9800; /* Orange headings in footer */
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ddd; /* Light gray text and links in footer */
+}
+
+.footer-section a:hover {
+    color: #ff9800; /* Orange text on hover in footer links */
+}
+
+/* Footer Social Icons (Optional) */
+.social-icons {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-icons li {
+   margin-right :10 px
+}
+.social-icons a:hover{
+background:red;}
+/* Responsive Design */
+

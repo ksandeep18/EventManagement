@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/others.css') }}">
+{% endblock %}
+
+{% block title %}My Events - Event Management System{% endblock %}
+
+{% block content %}
+    <h1>My Registered Events</h1>
+    {% if events %}
+        <ul class="event-list">
+            {% for event in events %}
+                <li>
+                    <h2><a href="{{ url_for('event_detail', id=event['id']) }}">{{ event['title'] }}</a></h2>
+                    <p>Date: {{ event['start_date'] }} to {{ event['end_date'] }}</p>
+                    <p>Location: {{ event['location'] }}</p>
+                    <p>Price: ${{ event['price'] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You haven't registered for any events yet.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Browse All Events</a>
+{% endblock %}

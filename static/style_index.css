@@ -1,0 +1,39 @@
+/* Styling for Event List */
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.event-list li {
+    background-color: #f9f9f9; /* Light gray background for each event */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.event-list li strong {
+    font-size: 18px;
+    color: #333; /* Darker text for event title */
+}
+
+.event-list li span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666; /* Lighter text for date */
+}
+
+.event-list li a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50; /* Green link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-list li a:hover {
+    color: #45a049; /* Slightly darker green on hover */
+}

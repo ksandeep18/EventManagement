@@ -1,6 +1,6 @@
 # Event Management System 
 
-A comprehensive Event Management System built with Flask that allows users to register, log in, create events, and manage seat reservations.
+An Event Management System built with Flask that allows users to register, log in, create events, and manage seat reservations.
 
 ---
 
@@ -8,17 +8,15 @@ A comprehensive Event Management System built with Flask that allows users to re
 1. [Features](#features)
 2. [Tech Stack](#tech-stack)
 3. [Setup Instructions](#setup-instructions)
-4. [Usage](#usage)
-5. [Future Enhancements](#future-enhancements)
-7. [Contributing](#contributing)
 
 ---
 
 ## 🚀 Features
 - User Authentication: Registration and login functionality with session management.
-- Event Management: Create, update, delete, and view events.
+- Event Management: Create, update, delete, and view events. (CRUD operations only by admins)
 - Seat Booking: Users can register for events with seat capacity limits.
 - Profile Management: Users can view their registered events in their profile.
+- Search Functionality: Users can search the events they registered easily.
 
 ---
 
@@ -32,4 +30,22 @@ A comprehensive Event Management System built with Flask that allows users to re
 ---
 
 ## ⚙️ Setup Instructions
-1. Clone the repository:
+Setup and Installation
+---
+Fork the repo:
+---
+Clone the repository:
+---
+Setup Virtual Environments:
+---
+Activate Virtual Environments:
+---
+Install dependencies:
+---
+Intialize the database:
+---
+Run the application:
+---
+
+
+

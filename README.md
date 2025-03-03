@@ -33,25 +33,27 @@ An Event Management System built with Flask that allows users to register, log i
 
 ---
 
-# Fork the repo
+## Fork the repo
 
-# Clone the repository:
+## Clone the repository:
 https://github.com/ksandeep18/EventManagement.git
 
-# Setup Virtual Environments:
-python -m venv venv
+## Setup Virtual Environments:
+python -m venv venv 
+
+## Unrestrict the Exceution policy:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# Activate Virtual Environments:
+## Activate Virtual Environments:
 venv\scripts\activate
 
-# Install dependencies:
+## Install dependencies:
 pip install -r requirements.txt
 
-# Intialize the database:
+## Intialize the database:
 sqlite3 event_management.db < schema.sql
 
-# Run the application:
+## Run the application:
 flask run
 
 

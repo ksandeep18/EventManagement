@@ -33,7 +33,7 @@ An Event Management System built with Flask that allows users to register, log i
 
 ---
 
-## Fork the repo
+## Fork the repository
 
 ## Clone the repository:
 https://github.com/ksandeep18/EventManagement.git
@@ -41,7 +41,7 @@ https://github.com/ksandeep18/EventManagement.git
 ## Setup Virtual Environments:
 python -m venv venv 
 
-## Unrestrict the Exceution policy:
+## Unrestrict the Execution policy:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## Activate Virtual Environments:

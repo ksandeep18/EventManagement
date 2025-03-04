@@ -16,7 +16,7 @@ An Event Management System built with Flask that allows users to register, log i
 - Event Management: Create, update, delete, and view events. (CRUD operations only by admins)
 - Seat Booking: Users can register for events with seat capacity limits.
 - Profile Management: Users can view their registered events in their profile.
-- Search Functionality: Users can search the events they registered easily.
+- Search Functionality: Users can search the events they registered for.
 
 ---
 
